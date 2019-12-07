@@ -2,7 +2,7 @@ Per prima cosa verrà avviato in background una istanza single node di Kubernete
 
 Per dimostrare il funzionamento del HPA utilizzeremo un'immagine docker personalizzata basata sull'immagine php-apache. 
 
-## Generiamo l'immagine
+## Prepariamo l'immagine
 
 Creiamo un file tramite l'editor o vi e lo chiamiano **Dockerfile** e scriviamo il seguente codice
 
@@ -24,7 +24,7 @@ Creiamo anche un file **index.php** con il seguente contenuto:
 
 Come si può notare il file implementa un'operazione che utilizza intensivamente la CPU.
 
-## Prepariamo l'immagine
+## Generiamo l'immagine
 
 Utilizziamo, adesso, il seguente comando per generare l'immagine docker.
 
