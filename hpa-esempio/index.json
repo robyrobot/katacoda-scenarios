@@ -8,20 +8,20 @@
       {
         "title": "Introduzione",
         "code": "foreground.sh",
-        "text": "01-introduzione.md"
+        "text": "01-intro.md"
       },
       {
-        "title": "Creiamo un deployment",        
+        "title": "Deployment",        
         "text": "02-deployment.md"
       },
       {
-        "title": "Aggiungiamo un HPA",        
+        "title": "Horizontal Pod Autoscale (HPA)",        
         "text": "03-hpa.md"
       }
     ],
     "intro": {
       "text": "intro.md",
-      "credits": ""
+      "credits": "Tratto da https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/"
     },
     "finish": {
       "text": "finish.md"
