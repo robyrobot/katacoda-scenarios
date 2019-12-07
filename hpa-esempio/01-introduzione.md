@@ -8,7 +8,7 @@ Creiamo un file tramite l'editor o vi e lo chiamiano **Dockerfile** e scriviamo 
 
 `FROM php:5-apache
 ADD index.php /var/www/html/index.php
-RUN chmod a+rx index.php` 
+RUN chmod a+rx index.php` {{execute}}
 
 Creiamo anche un file **index.php** con il seguente contenuto:
 
@@ -20,7 +20,8 @@ Creiamo anche un file **index.php** con il seguente contenuto:
   }
   echo "OK!";
 ?>
-`
+` {{execute}}
+
 Come si può notare il file implementa un'operazione che utilizza intensivamente la CPU.
 
 ## Prepariamo l'immagine
