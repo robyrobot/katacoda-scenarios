@@ -28,5 +28,5 @@ Come si può notare il file implementa un'operazione che utilizza intensivamente
 
 Utilizziamo, adesso, il seguente comando per generare l'immagine docker.
 
-`docker build -t hpa-example .`{{execute}}
+`docker build -t php-apache:local .`{{execute}}
 
