@@ -13,6 +13,10 @@
       {
         "title": "Creiamo un deployment",        
         "text": "02-deployment.md"
+      },
+      {
+        "title": "Aggiungiamo un HPA",        
+        "text": "03-hpa.md"
       }
     ],
     "intro": {
@@ -24,7 +28,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal",
+    "uilayout": "terminal",
     "uimessage1": "\u001b[32mShell interattiva\u001b[m\r\n"
   },
   "backend": {    
