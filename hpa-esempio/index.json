@@ -6,9 +6,13 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Introduzione",
         "code": "foreground.sh",
-        "text": "step1.md"
+        "text": "01-introduzione.md"
+      },
+      {
+        "title": "Creiamo un deployment",        
+        "text": "02-deployment.md"
       }
     ],
     "intro": {
@@ -20,7 +24,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
+    "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mShell interattiva\u001b[m\r\n"
   },
   "backend": {    
