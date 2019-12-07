@@ -18,7 +18,7 @@ Creiamo anche un file **index.php** con il seguente contenuto:
   for ($i = 0; $i <= 1000000; $i++) {
     $x += sqrt($x);
   }
-  echo "[{$_SERVER}] the response is: $x";
+  echo "response from {$_SERVER['SERVER_ADDR']} is $x";
 ?>
 `{{execute}}
 
