@@ -8,7 +8,7 @@ Creiamo un file tramite l'editor o vi e lo chiamiano **Dockerfile** e scriviamo 
 
 `FROM php:5-apache
 ADD index.php /var/www/html/index.php
-RUN chmod a+rx index.php`{{copy}} {{execute}}
+RUN chmod a+rx index.php`{{copy|execute}}
 
 Creiamo anche un file **index.php** con il seguente contenuto:
 
