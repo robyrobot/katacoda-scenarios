@@ -1,0 +1,1 @@
+[ -d /tmp/setup_done ] && echo "done"

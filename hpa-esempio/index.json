@@ -7,8 +7,9 @@
     "steps": [
       {
         "title": "Introduzione",
-        "code": "setup.sh",
-        "text": "01-intro.md"
+        "courseData": "setup.sh",
+        "text": "01-intro.md",
+        "verify": "check_setup.sh"
       },
       {
         "title": "Deployment",        
