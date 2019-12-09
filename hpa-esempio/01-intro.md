@@ -20,7 +20,7 @@ Creiamo anche un file **index.php** con il seguente contenuto:
   }
   echo "response from {$_SERVER['SERVER_ADDR']} is $x";
 ?>
-`{{execute}}
+`{{copy}}
 
 Come si può notare il file implementa un'operazione che utilizza intensivamente la CPU.
 
@@ -28,5 +28,5 @@ Come si può notare il file implementa un'operazione che utilizza intensivamente
 
 Utilizziamo, adesso, il seguente comando per generare l'immagine docker.
 
-`docker build -t php-apache:local .`{{copy}}
+`docker build -t php-apache:local .`{{execute}}
 

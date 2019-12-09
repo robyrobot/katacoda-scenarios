@@ -1,4 +1,5 @@
 #! /bin/bash
+set -x
 echo "Setup running ..."
 {
     snap install microk8s --classic
