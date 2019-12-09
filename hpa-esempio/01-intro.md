@@ -8,7 +8,7 @@ Creiamo un file tramite l'editor o vi e lo chiamiano **Dockerfile** e scriviamo 
 
 `FROM php:5-apache
 ADD index.php /var/www/html/index.php
-RUN chmod a+rx index.php`{{execute}}
+RUN chmod a+rx index.php`{{copy}}
 
 Creiamo anche un file **index.php** con il seguente contenuto:
 
@@ -28,5 +28,5 @@ Come si può notare il file implementa un'operazione che utilizza intensivamente
 
 Utilizziamo, adesso, il seguente comando per generare l'immagine docker.
 
-`docker build -t php-apache:local .`{{execute}}
+`docker build -t php-apache:local .`{{copy}}
 
