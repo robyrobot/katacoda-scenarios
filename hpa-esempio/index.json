@@ -7,7 +7,7 @@
     "steps": [
       {
         "title": "Introduzione",
-        "courseData": "setup.sh",
+        "code": "setup.sh",
         "text": "01-intro.md"
       },
       {
