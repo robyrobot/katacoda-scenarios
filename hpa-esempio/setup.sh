@@ -1,9 +1,9 @@
 stty -echo
-echo -n "Kubernetes installing ..."
+echo "Kubernetes installing ..."
 {
     snap install microk8s --classic
     snap alias microk8s.kubectl kubectl
     microk8s.enable metrics-server dns
-} &> /dev/null
+} > /dev/null
 echo "Done!" && stty echo 
 
