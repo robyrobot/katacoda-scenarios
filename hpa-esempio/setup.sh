@@ -1,3 +1,4 @@
+#!/bin/bash
 stty -echo
 echo "Kubernetes installing ..."
 {
