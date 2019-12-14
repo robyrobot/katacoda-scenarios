@@ -23,10 +23,11 @@ Creiamo anche un file **index.php**
 con il seguente codice PHP:
 
 `
-<?php
-  while(true){
-    echo "Hi I'm: {$_SERVER['SERVER_ADDR']}";
-  }  
+<?php  
+  for($i = 0; $i < 1000000000; $i++) {
+     $x += $i;
+  }
+  echo "response from {$_SERVER['SERVER_ADDR']} is $x";
 ?>
 `{{copy}}
 
