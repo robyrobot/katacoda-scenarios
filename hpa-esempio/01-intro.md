@@ -14,6 +14,8 @@ Premiamo il tasto *I* per entrare nella modalità edit e scriviamo il secuente c
 ADD index.php /var/www/html/index.php
 RUN chmod a+rx index.php`{{copy}}
 
+Salviamo il file e usciamo dall'editor premendo prima il tasto *ESC*, uscendo in questo modo dalla modalità modifica del vi, e digitiamo *:wq* per scrivere il file.
+
 Creiamo anche un file **index.php** 
 
 `vi index.php`{{execute}}

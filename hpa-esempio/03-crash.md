@@ -4,6 +4,6 @@ E' giunto il momento di aumentare il carico. Il seguente comando creerà un ambi
 
 nella shell appena apparsa scriviamo il seguente script. Lo script non fa altro che generare un numero infinito di chiamate al servizio in cascata. Il risultato sarà la stampa dell'indirizzo del POD che risponde alla chiamata.
 
-`while true; do wget -q -O- http://php-apache.example.svc.cluster.local; done`{{execute}}
+`while true; do wget -q -O- http://php-apache.example.svc.cluster.local; echo; done`{{execute}}
 
 Osservate cosa succede dopo un po' di tempo ... CRASH!
