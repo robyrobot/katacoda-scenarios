@@ -14,8 +14,8 @@
         "text": "02-deployment.md"
       },
       {
-        "title": "Crash!",        
-        "text": "03-crash.md"
+        "title": "Generiamo carico",        
+        "text": "03-load.md"
       },
       {
         "title": "Horizontal Pod Autoscale (HPA)",        
@@ -23,7 +23,7 @@
       },
       {
         "title": "Distribuzione del carico",        
-        "text": "05-load.md"
+        "text": "05-load-balance.md"
       }
     ],
     "intro": {

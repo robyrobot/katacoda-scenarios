@@ -16,7 +16,7 @@ A questo punto possiamo importarlo.
 L'immagine verrà importata in microk8s con il nome: *docker.io/library/php-apache:local*
 A questo punto possiamo eseguire il nostro deployment all'interno del namespace specificandolo con il parametro *--namespace=example*
 
-`kubectl run php-apache --image-pull-policy=Never --image=docker.io/library/php-apache:local --namespace=example --requests=cpu=100m --limits=cpu=200m --expose --port=80`{{execute}}
+`kubectl run php-apache --image-pull-policy=Never --image=docker.io/library/php-apache:local --namespace=example --requests=cpu=200m --limits=cpu=300m --expose --port=80`{{execute}}
 
 Il comando che abbiamo appena dato è in realtà più complesso di quello che sembra. Andiamo a vedere cosa è successo nel nostro cluster digitando il seguente comando:
 

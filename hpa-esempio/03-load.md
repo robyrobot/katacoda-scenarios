@@ -6,4 +6,6 @@ nella shell appena apparsa scriviamo il seguente script. Lo script non fa altro 
 
 `while true; do wget -q -O- http://php-apache.example.svc.cluster.local; echo; done`{{execute}}
 
-Osservate cosa succede dopo un po' di tempo ... CRASH!
+Osserviamo in un'altra finestra le metriche tramite il comando:
+
+`kubectl -n example get hpa -w`{{execute}}
