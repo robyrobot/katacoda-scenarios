@@ -4,13 +4,21 @@ Per dimostrare il funzionamento del HPA utilizzeremo un'immagine docker personal
 
 ## Prepariamo l'immagine
 
-Creiamo un file tramite l'editor o vi e lo chiamiano **Dockerfile** e scriviamo il seguente codice
+Creaiamo un file chiamto *Dockerfile* tramite il seguente comando (cliccando sull'icona a formadi freccia in basso a destra si eseguirà il comando nella finestra corrente):
+
+`vi Dockerfile`{{execute}}
+
+Premiamo il tasto *I* per entrare nella modalità edit e scriviamo il secuente codice (cliccando sull'icona di copia in basso a destra il codice verrà copiato negli appunti)
 
 `FROM php:5-apache
 ADD index.php /var/www/html/index.php
 RUN chmod a+rx index.php`{{copy}}
 
-Creiamo anche un file **index.php** con il seguente contenuto:
+Creiamo anche un file **index.php** 
+
+`vi index.php`{{execute}}
+
+con il seguente codice PHP:
 
 `
 <?php
