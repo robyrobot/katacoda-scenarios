@@ -24,11 +24,9 @@ con il seguente codice PHP:
 
 `
 <?php
-  $x = 0.0001;
-  for ($i = 0; $i <= 5000000; $i++) {
-    $x += sqrt($x);
-  }
-  echo "response from {$_SERVER['SERVER_ADDR']} is $x";
+  while(true){
+    echo "Hi I'm: {$_SERVER['SERVER_ADDR']}";
+  }  
 ?>
 `{{copy}}
 
