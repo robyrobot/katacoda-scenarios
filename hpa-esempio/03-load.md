@@ -8,4 +8,4 @@ nella shell appena apparsa scriviamo il seguente script. Lo script non fa altro 
 
 Osserviamo in un'altra finestra le metriche tramite il comando:
 
-`kubectl -n example get hpa -w`{{execute}}
+`watch -n 2 kubectl -n example top pod`{{execute}}
