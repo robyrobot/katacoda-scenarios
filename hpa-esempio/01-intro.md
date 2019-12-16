@@ -27,7 +27,6 @@ con il seguente codice PHP:
     for ($i = 0; $i <= 1000000; $i++) {
       $x += sqrt($x);
     }
-
     echo "response from {$_SERVER['SERVER_ADDR']} is $x\n";
   ?>`{{copy}}
 
