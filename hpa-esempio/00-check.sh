@@ -1,2 +1,3 @@
-ENABLED=$(microk8s.status --wait-ready | grep -i enabled)
-echo $ENABLED | grep -i dns && echo $ENABLED | grep -i metrics-server 
+microk8s.status --wait-ready | grep -i enabled > /tmp/enabled && \
+cat /tmp/enabled | grep dns && \
+cat /tmp/enabled | grep metrics-server
