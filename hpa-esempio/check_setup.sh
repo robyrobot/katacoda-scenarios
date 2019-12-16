@@ -1,1 +1,1 @@
-[ -d /tmp/setup_done ] && echo "done"
+[ -f /tmp/setup_done ] && echo "done"
