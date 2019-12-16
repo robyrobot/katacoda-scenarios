@@ -6,8 +6,7 @@
   "details": {
     "steps": [
       {
-        "title": "Setup environment",  
-        "text": "",      
+        "title": "Setup environment",           
         "answer": "00-setup.md"        
       },
       {
