@@ -10,11 +10,11 @@ Creaiamo un file chiamto *Dockerfile* tramite il seguente comando (cliccando sul
 
 Premiamo il tasto *I* per entrare nella modalità edit e scriviamo il secuente codice (cliccando sull'icona di copia in basso a destra il codice verrà copiato negli appunti)
 
-```
+<pre class="file" data-target="clipboard">
 FROM php:5-apache
 ADD index.php /var/www/html/index.php
 RUN chmod a+rx index.php
-```{{copy}}
+</pre>
 
 Salviamo il file e usciamo dall'editor premendo prima il tasto *ESC*, uscendo in questo modo dalla modalità modifica del vi, e digitiamo *:wq* per scrivere il file.
 
@@ -24,7 +24,7 @@ Creiamo anche un file **index.php**
 
 con il seguente codice PHP:
 
-```php
+<pre class="file" data-target="clipboard">
 <?php  
   $x = 0.0001;
   for ($i = 0; $i <= 1000000; $i++) {
@@ -32,7 +32,7 @@ con il seguente codice PHP:
   }
   echo "response from {$_SERVER['SERVER_ADDR']} is $x\n";
 ?>
-```{{copy}}
+</pre>
 
 Come si può notare il file implementa un'operazione che utilizza intensivamente la CPU.
 
