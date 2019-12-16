@@ -1,3 +1,2 @@
-microk8s.status --wait-ready | grep -i enabled > /tmp/enabled && \
-cat /tmp/enabled | grep dns && \
-cat /tmp/enabled | grep metrics-server
+microk8s.status --wait-ready | grep -i enabled > /tmp/enabled
+grep dns /tmp/enabled && grep metrics-server /tmp/enabled
