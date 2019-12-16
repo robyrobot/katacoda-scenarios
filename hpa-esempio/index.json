@@ -27,8 +27,7 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
-      "code": "setup.sh",
+      "text": "intro.md",      
       "credits": "Tratto da https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/"
     },
     "finish": {
