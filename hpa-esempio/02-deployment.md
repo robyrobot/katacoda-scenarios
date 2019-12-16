@@ -22,3 +22,5 @@ Il comando che abbiamo appena dato è in realtà più complesso di quello che se
 
 `kubectl get all -n example`{{execute}}
 
+Come si può vedere sono stati creati diversi oggetti di kubernetes: deployment, pod, service, replicaSet.
+

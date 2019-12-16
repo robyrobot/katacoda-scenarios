@@ -7,7 +7,8 @@
     "steps": [
       {
         "title": "Introduzione",        
-        "text": "01-intro.md"        
+        "text": "01-intro.md",
+        "verify": "check_setup.sh"   
       },
       {
         "title": "Deployment",        
@@ -20,10 +21,6 @@
       {
         "title": "Horizontal Pod Autoscale (HPA)",        
         "text": "04-hpa.md"
-      },
-      {
-        "title": "Distribuzione del carico",        
-        "text": "05-load-balance.md"
       }
     ],
     "intro": {

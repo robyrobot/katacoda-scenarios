@@ -9,3 +9,5 @@ nella shell appena apparsa scriviamo il seguente script. Lo script non fa altro 
 Osserviamo in un'altra finestra le metriche tramite il comando:
 
 `watch -n 2 kubectl -n example top pod`{{execute}}
+
+> NOTA: a volte bisogna attendere un po' prima che le metriche sia disponibili

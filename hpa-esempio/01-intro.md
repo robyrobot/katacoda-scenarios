@@ -24,9 +24,10 @@ con il seguente codice PHP:
 
 `
 <?php  
-  for($i = 0; $i < 1000000; $i++) {
-     $x += sqrt($i);     
-  }  
+  $x = 0.0001;
+  for ($i = 0; $i <= 1000000; $i++) {
+	  $x += sqrt($x);
+  }
 
   echo "response from {$_SERVER['SERVER_ADDR']} is $x\n";
 ?>

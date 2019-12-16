@@ -6,4 +6,8 @@ Il seguente comando creerà un HPA che mantiene tra 1 e 10 repliche dei pod cont
 
 Possiamo controllare lo stato del HPA attraverso il seguente comando:
 
-`kubectl -n example get hpa`{{execute}}
+`kubectl -n example get hpa -w`{{execute}}
+
+Questo comando metterà in attesa il terminale e mostrerà via via le variazioni nell'HPA. Dopo un po' vedremo come all'aumentare del carico inizieranno ad aumentare le repliche.
+
+> Tornando nella finestra dove abbiamo eseguito il load-generator vedremo che gli indirizzi IP > del servizio che risponde alla chiamata cicleranno tra tutte le repliche.
