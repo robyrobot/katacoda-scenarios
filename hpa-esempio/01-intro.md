@@ -1,5 +1,3 @@
-Per prima cosa verrà avviato in background una istanza single node di Kubernetes.
-
 Per dimostrare il funzionamento del HPA utilizzeremo un'immagine docker personalizzata basata sull'immagine php-apache. 
 
 ## Prepariamo l'immagine
