@@ -23,14 +23,14 @@ Creiamo anche un file **index.php**
 con il seguente codice PHP:
 
 `
-<?php  
-  $x = 0.0001;
-  for ($i = 0; $i <= 1000000; $i++) {
-	  $x += sqrt($x);
-  }
+  <?php  
+    $x = 0.0001;
+    for ($i = 0; $i <= 1000000; $i++) {
+      $x += sqrt($x);
+    }
 
-  echo "response from {$_SERVER['SERVER_ADDR']} is $x\n";
-?>
+    echo "response from {$_SERVER['SERVER_ADDR']} is $x\n";
+  ?>
 `{{copy}}
 
 Come si può notare il file implementa un'operazione che utilizza intensivamente la CPU.
