@@ -11,8 +11,7 @@
       },
       {
         "title": "Introduzione",        
-        "text": "01-intro.md",
-        "verify": "check_setup.sh"   
+        "text": "01-intro.md"         
       },
       {
         "title": "Deployment",        
