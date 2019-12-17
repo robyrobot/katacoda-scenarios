@@ -23,7 +23,7 @@ Creiamo anche un file **index.php**
 con il seguente codice PHP:
 
 <pre class="file" data-target="clipboard">
-<?php
+&lt;?php
   $x = 0.0001;
   for ($i = 0; $i <= 1000000; $i++) {
     $x += sqrt($x);
