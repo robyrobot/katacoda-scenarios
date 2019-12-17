@@ -2,7 +2,7 @@ Per dimostrare il funzionamento del HPA utilizzeremo un'immagine docker personal
 
 ## Prepariamo l'immagine
 
-Creaiamo un file chiamto *Dockerfile* tramite il seguente comando (cliccando sull'icona a formadi freccia in basso a destra si eseguirà il comando nella finestra corrente):
+Creaiamo un file chiamto *Dockerfile* tramite il seguente comando (cliccando sul box sottostante verrà seguito il comando nella finestra corrente):
 
 `vi Dockerfile`{{execute}}
 
