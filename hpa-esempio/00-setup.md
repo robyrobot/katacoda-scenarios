@@ -18,10 +18,15 @@ Per prima cosa dobbiamo ricavare il token per connetterci alla dashboard.
 
 ```
 token=$(microk8s.kubectl -n kube-system get secret | grep default-token | cut -d " " -f1)
-microk8s.kubectl -n kube-system describe secret $token
+microk8s.kubectl -n kube-system describe secret $token > dashboard_token.txt
 ```{{execute}}
 
 Appuntiamoci il token appena ottenuto copiandolo negli appunti. 
+
+> NOTA: il terminale di katacoda non consente di copiare il testo. 
+> Il comando precedente ha copiato il risultato in un file *dashboard_token.txt* apriamolo con > l'editor così saremo in grado di copiare il token che ci servirà per autenticarci nella 
+> dashboard.
+ 
 Ora dobbiamo eseguire un port forward per poter accedere alla dashboard. Ad esempio usiamo la porta 10443.
 
 `microk8s.kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443 --address 0.0.0.0`{{execute}}
