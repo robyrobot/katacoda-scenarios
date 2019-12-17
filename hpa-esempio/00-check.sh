@@ -1,3 +1,1 @@
-#!/bin/bash
-microk8s.status --wait-ready | grep -i enabled > .enabled.txt
-grep dns .enabled.txt && grep metrics-server .enabled.txt
+[ $(microk8s.status --wait-ready | grep -i enabled | wc -l) -ge 2 ] && echo "done"
