@@ -6,7 +6,7 @@ Step 1: Installare microk8s usando il package manager *snap*.
 
 Step 2: Creiamo un alias per evitare di scrivere sempre microk8s.kubectl. 
 
-`snap alias microk8s.kubectl kubectl'`{{execute}}
+`snap alias microk8s.kubectl kubectl`{{execute}}
 
 Step 3: Installare gli addon per il DNS, le metriche e la dashboard di kubernetes. 
 
@@ -26,6 +26,5 @@ Ora dobbiamo eseguire un port forward per poter accedere alla dashboard. Ad esem
 
 `microk8s.kubectl port-forward -n kube-system service/kubernetes-dashboard 3000:443`{{execute}}
 
-per accedere alla dashboard utilizziamo il seguente indirizzo.
-
-https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com
+> Per accedere alla dashboard utilizziamo il seguente indirizzo:>
+> https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com

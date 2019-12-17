@@ -23,6 +23,7 @@ Creiamo anche un file **index.php**
 con il seguente codice PHP:
 
 <pre class="file" data-target="clipboard">
+
 <?php  
   $x = 0.0001;
   for ($i = 0; $i <= 1000000; $i++) {
@@ -30,6 +31,7 @@ con il seguente codice PHP:
   }
   echo "response from {$_SERVER['SERVER_ADDR']} is $x\n";
 ?>
+
 </pre>
 
 Come si può notare il file implementa un'operazione che utilizza intensivamente la CPU.
