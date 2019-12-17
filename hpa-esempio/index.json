@@ -6,10 +6,8 @@
   "details": {
     "steps": [
       {
-        "title": "Setup environment",                   
-        "text": "00-setup.md",
-        "verify": "00-check.sh"
-
+        "title": "Installazione Kubernetes (single host)",                   
+        "text": "00-setup.md"
       },
       {
         "title": "Introduzione",        
