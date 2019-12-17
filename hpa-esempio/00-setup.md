@@ -27,4 +27,4 @@ Ora dobbiamo eseguire un port forward per poter accedere alla dashboard. Ad esem
 `microk8s.kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443 --address 0.0.0.0`{{execute}}
 
 > Per accedere alla dashboard utilizziamo il seguente indirizzo:>
-> https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com
+> https://[[HOST_SUBDOMAIN]]-10443-[[KATACODA_HOST]].environments.katacoda.com

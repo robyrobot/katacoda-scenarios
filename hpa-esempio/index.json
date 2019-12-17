@@ -35,7 +35,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
+    "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mShell interattiva\u001b[m\r\n"
   },
   "backend": {    
