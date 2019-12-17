@@ -16,7 +16,7 @@ RUN chmod a+rx index.php
 
 Salviamo il file e usciamo dall'editor premendo prima il tasto <kbd>ESC</kbd>, uscendo in questo modo dalla modalità modifica del vi, e digitiamo *:wq* per scrivere il file.
 
-Creiamo anche un file **index.php** 
+Creiamo anche un file *index.php* 
 
 `vi index.php`{{execute}}
 
