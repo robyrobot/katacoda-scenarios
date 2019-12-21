@@ -1,5 +1,5 @@
 {
-  "title": "Scalabilità orizontale con HPA di Kubernetes",
+  "title": "Scalabilità orizzontale con HPA di Kubernetes",
   "description": "Questo scenario illustra come è possibile realizzare la x-scalabilità con kubernetes",
   "difficulty": "beginner",
   "time": "1 ora",
