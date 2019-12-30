@@ -14,10 +14,10 @@ Ma l’uso di Kubernetes non è legato solamente alla quantità di container in 
 Come funziona?
 Introduciamo prima di tutto alcuni termini fondamentali per comprendere l’architettura di Kubernetes.
 
-* Master: la macchina che controlla i nodi Kubernetes. È il punto di origine di tutti i processi.
+* **Master**: la macchina che controlla i nodi Kubernetes. È il punto di origine di tutti i processi.
 
-* Nodi: le macchine che eseguono le attività richieste, controllate dal master Kubernetes.
+* **Nodi**: le macchine che eseguono le attività richieste, controllate dal master Kubernetes.
 
-* Pod: un gruppo di uno o più container distribuiti su un singolo nodo. Tutti i container presenti in un pod condividono delle risorse. I pod astraggono la rete e lo storage dal container sottostante, permettendo di spostare i container nei cluster con maggiore facilità.
+* **Pod**: un gruppo di uno o più container distribuiti su un singolo nodo. Tutti i container presenti in un pod condividono delle risorse. I pod astraggono la rete e lo storage dal container sottostante, permettendo di spostare i container nei cluster con maggiore facilità.
 
 Kubernetes offre la possibilità di distribuire i container in modo agevole e scalabile e di gestire al meglio i carichi di lavoro. Permette di creare applicazioni e servizi su più container, programmarli e gestirli a livello di scalabilità e integrità nel tempo. La complessità di gestione derivante da un numero elevato di contenitori viene semplificata raggruppando i container in “pod”, che aiutano a programmare i carichi di lavoro e ad erogare i servizi richiesti, inclusi rete e storage ai container stessi. Kubernetes è anche in grado di bilanciare automaticamente i carichi all’interno dei pod, semplificando notevolmente la gestione complessiva dell’infrastruttura. Inoltre, l’infrastruttura standard di Kubernetes è completamente ridondata, e questo riduce drasticamente il rischio di downtime, mentre con il solo uso di Docker o di altri sistemi di conteinerizzazione, l’affidabilità non è assicurata a livelli così alti.
