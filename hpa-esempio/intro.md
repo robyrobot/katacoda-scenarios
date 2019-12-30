@@ -1,4 +1,6 @@
-## Benvenuti!
+## X-scalabilità con Horizontal Pod Autoscaler (HPA) di Kubernetes
+
+Benvenuti!
 In questo scenario si illustra il funzionamento del Horizontal Pod Autoscaler (HPA) di Kubernetes.
 
 <img src="https://raw.githubusercontent.com/robyrobot/katacoda-scenarios/master/hpa-esempio/Kubernetes_Logo.png" width="350" title="Kubernetes logo">
