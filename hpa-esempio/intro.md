@@ -1,9 +1,9 @@
 ## X-scalabilità con Horizontal Pod Autoscaler (HPA) di Kubernetes
-
+  
+<img src="https://raw.githubusercontent.com/robyrobot/katacoda-scenarios/master/hpa-esempio/Kubernetes_Logo.png" width="350" title="Kubernetes logo">
+  
 Benvenuti!
 In questo scenario si illustra il funzionamento del Horizontal Pod Autoscaler (HPA) di Kubernetes.
-
-<img src="https://raw.githubusercontent.com/robyrobot/katacoda-scenarios/master/hpa-esempio/Kubernetes_Logo.png" width="350" title="Kubernetes logo">
 
 Kubernetes è uno strumento open source di orchestrazione e gestione di container. E’ stato sviluppato dal team di Google ed è uno dei tool più utilizzati a questo scopo. Kubernetes permette di eliminare molti dei processi manuali coinvolti nel deployment e nella scalabilità di applicazioni containerizzate e di gestire in maniera semplice ed efficiente cluster di host su cui vengono eseguiti i container.
 
