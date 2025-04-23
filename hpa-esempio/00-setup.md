@@ -11,28 +11,7 @@ Step 2: Creiamo un alias per evitare di scrivere sempre microk8s.kubectl.
 
 `snap alias microk8s.kubectl kubectl`{{execute}}
 
-Step 3: Installare gli addon per il DNS, le metriche e la dashboard di kubernetes. 
+Step 3: Installare gli addon per il DNS e le metriche. 
 
-`microk8s.enable dns metrics-server dashboard`{{execute}}
+`microk8s.enable dns metrics-server`{{execute}}
 
-Step 4: Configuriamo la dashbaord
-
-Per prima cosa dobbiamo ricavare il token per connetterci alla dashboard.
-
-```
-token=$(microk8s.kubectl -n kube-system get secret | grep default-token | cut -d " " -f1)
-microk8s.kubectl -n kube-system describe secret $token > dashboard_token.txt
-```{{execute}}
-
-Appuntiamoci il token appena ottenuto copiandolo negli appunti. 
-
-> NOTA: il terminale di katacoda non consente di copiare il testo. 
-> Il comando precedente ha copiato il risultato in un file *dashboard_token.txt* apriamolo con > l'editor così saremo in grado di copiare il token che ci servirà per autenticarci nella 
-> dashboard.
- 
-Ora dobbiamo eseguire un port forward per poter accedere alla dashboard. Ad esempio usiamo la porta 10443.
-
-`microk8s.kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443 --address 0.0.0.0`{{execute}}
-
-> Per accedere alla dashboard utilizziamo il seguente indirizzo:
-> [{{TRAFFIC_HOST1_10443}}]({{TRAFFIC_HOST1_10443}})
