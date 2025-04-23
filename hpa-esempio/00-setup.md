@@ -2,6 +2,9 @@ accediamo al sito: https://microk8s.io/docs/ e seguiamo i passi per installare m
 
 Step 1: Installare microk8s usando il package manager *snap*. 
 
+> Se non installato, installare snapd con il seguente comando:
+> `apt install snapd`{{execute}}
+
 `snap install microk8s --classic`{{execute}}
 
 Step 2: Creiamo un alias per evitare di scrivere sempre microk8s.kubectl. 
