@@ -16,7 +16,11 @@ A questo punto possiamo importarlo.
 L'immagine verrà importata in microk8s con il nome: *docker.io/library/php-apache:local*
 A questo punto possiamo eseguire il nostro deployment all'interno del namespace specificandolo con il parametro *--namespace=example*
 
-`kubectl create deployment php-apache --image=docker.io/library/php-apache:local --namespace=example --port=8`{{execute}}
+`kubectl create deployment php-apache --image=docker.io/library/php-apache:local --namespace=example --port=80`{{execute}}
+
+Creiamo un servizio che risponderà per il deployment
+
+`kubectl expose deployment php-apache --type=LoadBalancer --port=80 --target-port=80`{{execute}}
 
 e impostare i limits e requests
 
