@@ -13,8 +13,10 @@ A questo punto possiamo importarlo.
 
 `microk8s.ctr --namespace k8s.io image import php-apache.tar`{{execute}}
 
+> Questa funzionalità di microk8s è molto utile in ambienti air-gapped (ambienti isolati) quando non è disponibile una connessione di rete.
+
 L'immagine verrà importata in microk8s con il nome: *docker.io/library/php-apache:local*
-A questo punto possiamo eseguire il nostro deployment all'interno del namespace specificandolo con il parametro *--namespace=example*
+A questo punto possiamo eseguire il nostro deployment all'interno del namespace specificandolo con il parametro *--namespace=example* o *-n example*
 
 `kubectl create deployment php-apache --image=docker.io/library/php-apache:local --namespace=example --port=80`{{execute}}
 
